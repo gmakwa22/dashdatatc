@@ -939,19 +939,19 @@ cfg: { // Application Insights Configuration
                                     <div class="d-flex flex-wrap justify-content-end">
                                         <div class="metric-card" style="border: 2px solid #ff0000; padding: 8px 12px; margin: 5px; background: rgba(255,0,0,0.1);">
                                             <div class="text-white" style="font-size: 12px;">Daily</div>
-                                            <div class="text-white neons" style="font-size: 18px; font-weight: bold;" id="metricDaily2">007</div>
+                                            <div class="text-white neons" style="font-size: 18px; font-weight: bold;" id="metricDaily2">2268</div>
                                         </div>
                                         <div class="metric-card" style="border: 2px solid #ff0000; padding: 8px 12px; margin: 5px; background: rgba(255,0,0,0.1);">
                                             <div class="text-white" style="font-size: 12px;">MTD</div>
-                                            <div class="text-white neons" style="font-size: 18px; font-weight: bold;" id="metricMTD2">127</div>
+                                            <div class="text-white neons" style="font-size: 18px; font-weight: bold;" id="metricMTD2">41148</div>
                                         </div>
                                         <div class="metric-card" style="border: 2px solid #ff0000; padding: 8px 12px; margin: 5px; background: rgba(255,0,0,0.1);">
                                             <div class="text-white" style="font-size: 12px;">YTD</div>
-                                            <div class="text-white neons" style="font-size: 18px; font-weight: bold;" id="metricYTD2">127</div>
+                                            <div class="text-white neons" style="font-size: 18px; font-weight: bold;" id="metricYTD2">41148</div>
                                         </div>
                                         <div class="metric-card" style="border: 2px solid #ff0000; padding: 8px 12px; margin: 5px; background: rgba(255,0,0,0.1);">
                                             <div class="text-white" style="font-size: 12px;">ALL</div>
-                                            <div class="text-white neons" style="font-size: 18px; font-weight: bold;" id="metricALL2">43022</div>
+                                            <div class="text-white neons" style="font-size: 18px; font-weight: bold;" id="metricALL2">13,939,128</div>
                                         </div>
                                         <div class="metric-card" style="border: 2px solid #ff0000; padding: 8px 12px; margin: 5px; background: rgba(255,0,0,0.1);">
                                             <div class="text-white" style="font-size: 12px;">ALV</div>
@@ -2407,7 +2407,13 @@ cfg: { // Application Insights Configuration
                 }
 
                 function formatLicenseeNumber(num) {
-                    return String(num).padStart(3, '0');
+                    var numStr = String(num);
+                    // Add commas for numbers >= 1000
+                    if (num >= 1000) {
+                        return numStr.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                    }
+                    // Keep padding for smaller numbers
+                    return numStr.padStart(3, '0');
                 }
 
                 function renderLicenseeGrid(licensees) {
@@ -2606,12 +2612,16 @@ cfg: { // Application Insights Configuration
                     }
                     
                     // Update summary metrics
-                    setText("metricDaily", formatLicenseeNumber(gridData.daily || 7));
-                    setText("metricMTD", formatLicenseeNumber(gridData.mtd || 127));
-                    setText("metricYTD", formatLicenseeNumber(gridData.ytd || 127));
-                    setText("metricALL", formatLicenseeNumber(gridData.all || 43022));
-                    setText("metricALV", formatLicenseeNumber(gridData.alv || 680));
-                    setText("metricALVM", formatLicenseeNumber(gridData.alvm || 635));
+                    setText("metricDaily", formatLicenseeNumber(gridData.daily || 2268));
+                    setText("metricDaily2", formatLicenseeNumber(gridData.daily || 2268));
+                    setText("metricMTD", formatLicenseeNumber(gridData.mtd || 41148));
+                    setText("metricMTD2", formatLicenseeNumber(gridData.mtd || 41148));
+                    setText("metricYTD", formatLicenseeNumber(gridData.ytd || 41148));
+                    setText("metricYTD2", formatLicenseeNumber(gridData.ytd || 41148));
+                    setText("metricALL", formatLicenseeNumber(gridData.all || 13939128));
+                    setText("metricALL2", formatLicenseeNumber(gridData.all || 13939128));
+                    setText("metricALV", formatLicenseeNumber(gridData.alv || 220320));
+                    setText("metricALVM", formatLicenseeNumber(gridData.alvm || 205740));
                     
                     // Update date range text
                     var dateRangeText = gridData.selectedDateRange || "7";

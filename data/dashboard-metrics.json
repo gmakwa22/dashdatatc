@@ -17,7 +17,7 @@
       "investment": 6000000,
       "income": 1800000,
       "income2": 7337006.66,
-      "salesPercentage": 29.57
+      "salesPercentage": 748.67
     },
     "territories": {
       "totalAmount": 10000000,
@@ -51,12 +51,12 @@
       "month": 903
     },
     "licenseeGrid": {
-      "daily": 7,
-      "mtd": 127,
-      "ytd": 127,
-      "all": 43022,
-      "alv": 680,
-      "alvm": 635,
+      "daily": 2268,
+      "mtd": 41148,
+      "ytd": 41148,
+      "all": 13939128,
+      "alv": 220320,
+      "alvm": 205740,
       "selectedDateRange": "7",
       "selectedCountry": "ALL",
       "licensees": [
