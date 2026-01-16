@@ -1071,7 +1071,7 @@ cfg: { // Application Insights Configuration
                     var password = document.getElementById('password').value;
                     var errorDiv = document.getElementById('loginError');
 
-                    if (username === 'admin' && password === '1907admin') {
+                    if (username === 'admin' && password === '1907') {
                         // Successful login
                         sessionStorage.setItem('taxcash_authenticated', 'true');
                         var loginOverlay = document.getElementById('loginOverlay');
