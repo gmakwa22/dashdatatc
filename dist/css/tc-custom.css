@@ -1,0 +1,453 @@
+.neons {
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        color: #fff;
+        text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2;
+    }
+
+    to {
+        color: gray;
+        text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+    }
+}
+
+@keyframes anim-glow {
+    0% {
+        box-shadow: 0 0 rgba(#61EF61, 1);
+    }
+
+    100% {
+        box-shadow: 0 0 10px 8px transparent;
+        border-width: 2px;
+    }
+}
+
+.glow {
+    border: 2px solid #ff0000;
+    animation: anim-glow 2s ease infinite;
+}
+.glow1 {
+    border: 2px solid #ffc107;
+    animation: anim-glow 2s ease infinite;
+}
+.glow2 {
+    border: 2px solid #61EF61;
+    animation: anim-glow 2s ease infinite;
+}
+
+.glow3 {
+    border: 2px solid #0e82f5;
+    animation: anim-glow 2s ease infinite;
+}
+
+.glow4 {
+    border: 2px solid #0006ff;
+    animation: anim-glow 2s ease infinite;
+}
+
+.glow5 {
+    border: 2px solid #ff6b00;
+    animation: anim-glow 2s ease infinite;
+}
+
+.glow6 {
+    border: 2px solid #00ff88;
+    animation: anim-glow 2s ease infinite;
+}
+
+.glow7 {
+    border: 2px solid #ff00ff;
+    animation: anim-glow 2s ease infinite;
+}
+
+.glow8 {
+    border: 2px solid #00d4ff;
+    animation: anim-glow 2s ease infinite;
+}
+
+.pulsate {
+    -webkit-animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.5;
+}
+
+.dropdowncolor {
+    color: cornflowerblue;
+}
+
+option {
+    font-color: black;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+select option {
+    margin: 40px;
+    background: black;
+    padding: 3px;
+    margin: 3px; 
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 1037px;
+        margin: 1.75rem auto;
+    }
+
+    .modal-dialog.modal-xl {
+        max-width: 1137px;
+        margin: 1.75rem auto;
+    }
+} 
+
+.modal-backdrop {
+    background-color: transparent;
+}
+
+body {
+
+    padding: 0px;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.modal-content {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    background-color: black;
+    color: white;
+}
+
+.modal-footer {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+}
+
+.modal-header {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+}
+
+.layout-primary thead {
+    line-height: 1.0;
+}
+.layout-warning thead {
+    line-height: 1.0;
+    color: #000;
+}
+.layout-success thead {
+    line-height: 1.0;
+    background-color: #28a745;
+}
+.badge-success {
+    color: #fff;
+    background-color: #28a745;
+}
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #20d408;
+}
+.layout-success.bordered {
+    border: 2px solid #28a745;
+}
+.spactc {
+    color: black;
+}
+.badge-danger {
+    background-color: #ff0000 !important;
+}
+.custom-badge-button {
+    font-size: 14px;
+    padding: 3px !important;
+}
+.btn-danger {
+    background-color: #df0116;
+}
+
+.btn-dark, .btn-dark:hover, .btn-dark:active, .btn-dark:visited {
+    background-color: #ffad1e !important;
+}
+
+#LoanStatusHistoryTBody tr:hover {
+    color: dodgerblue !important;
+}
+table tr:hover {
+    color: dodgerblue !important;
+}
+#MemberNoteHistoryTBody tr:hover {
+    color: dodgerblue !important;
+}
+#table_collection2 tr:hover {
+    color: #df0116 !important;
+}
+table#table-1.dataTable tbody tr:hover {
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+
+table#table-1.dataTable tbody tr:hover > .sorting_1 {
+        color: dodgerblue;
+        font-weight: bold;
+}
+
+#table-10 tbody tr:hover {
+    color: dodgerblue;
+    font-weight: bold;
+}
+#table-10 tbody tr:hover > .sorting_1 {
+        color: dodgerblue;
+        font-weight: bold;
+}
+
+#loanhist tr:hover {
+    color: red;
+} 
+
+#table-2 tbody tr:hover {
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+#table-2 tbody tr:hover > .sorting_1 {
+        color: dodgerblue;
+        font-weight: bold;
+    }
+#table-5 tbody tr:hover {
+    color: dodgerblue;
+    font-weight: bold;
+}
+#example tbody tr:hover {
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+    #table-5 tbody tr:hover > .sorting_1 {
+        color: dodgerblue;
+        font-weight: bold;
+    }
+.accordion-alt-tc a {
+    line-height: 50px;
+    padding-left:10px;
+}
+
+.site-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.6rem; /* Footer height */
+    margin-left: 0px !important;
+    color: #464546;
+    background-color: black!important;
+}
+
+
+
+
+.form-control, .form-control:focus, .form-control:disabled, .form-control[readonly] {
+    font-size: 14px !important;
+}
+
+
+table.dataTable tbody tr {
+    /* background-color: rgba(0,0,0,0) !important;*/
+    font-weight: normal !important;
+}
+
+    table.dataTable tbody tr .child {
+        background-color: rgba(0,0,0,0) !important;
+    }
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+    color: white !important;
+}
+
+table.dataTable.display tbody tr.odd > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
+    /* background-color: rgba(0,0,0,0) !important;*/
+}
+
+table.dataTable.order-column tbody tr > .sorting_1, table.dataTable.order-column tbody tr > .sorting_2, table.dataTable.order-column tbody tr > .sorting_3, table.dataTable.display tbody tr > .sorting_1, table.dataTable.display tbody tr > .sorting_2, table.dataTable.display tbody tr > .sorting_3 {
+    /*background-color: rgba(0,0,0,0) !important;*/
+}
+
+.child {
+    background: rgba(0, 151, 19, 0) !important;
+    /*opacity: 0.3 !important;*/
+}
+
+#processingIndicator {
+    background-color: black !important;
+}
+
+.dataTables_processing {
+    background: rgba(0, 151, 19, 0) !important;
+}
+
+input[type=search] {
+    color: white;
+}
+
+select {
+    color: white;
+    padding: 3px;
+    margin: 3px;
+    border: 1px solid rgba(126, 239, 104, 0.8) !important;
+    background: transparent;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: none;
+    color: black !important;
+    border-radius: 4px;
+    border: 1px solid #828282;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:active {
+    background: none;
+    color: black !important;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: rgba(126, 239, 104, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+    outline: 0 none;
+}
+
+textarea:focus {
+    border-color: rgba(126, 239, 104, 0.8) !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6) !important;
+    outline: 0 none !important;
+}
+
+select:focus {
+    border-color: rgba(126, 239, 104, 0.8) !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6) !important;
+    outline: 0 none !important;
+    padding: 3px;
+    margin: 3px;
+}
+
+.blinking {
+    animation: blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+    0% {
+        color: #fff;
+    }
+
+    49% {
+        color: #fff;
+    }
+
+    60% {
+        color: transparent;
+    }
+
+    99% {
+        color: transparent;
+    }
+
+    100% {
+        color: #fff;
+    }
+}
+
+table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
+    border-top: 1px solid #000 !important   ;
+    border-left: 1px solid #000 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+    border: 1px solid #2980B9 !important;
+    background-color: #2980B9 !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2980B9), color-stop(100%, #2980B9)) !important;
+    background: -webkit-linear-gradient(top, #2980B9 0%, #2980B9 100%) !important;
+    background: -moz-linear-gradient(top, #2980B9 0%, #2980B9 100%) !important;
+    background: -ms-linear-gradient(top, #2980B9 0%, #2980B9 100%) !important;
+    background: -o-linear-gradient(top, #2980B9 0%, #2980B9 100%) !important;
+    background: linear-gradient(to bottom, #2980B9 0%, #2980B9 100%) !important;
+}
+
+
+.ChoiceToggle {
+    height: 18px !important;
+}
+    }
+
+.btn-outline-danger a:link {
+    background-color: yellow;
+}
+
+.clabel1 {
+    background-color: #df0116 !important;
+    font-weight: bold !important;
+}
+.clabel2 {
+    background-color: #afeeee !important;
+    color: black !important;
+    font-weight: bold !important;
+}
+.clabel3 {
+    background-color: #4001df !important;
+    font-weight: bold !important;
+}
+.clabel4 {
+    background-color: #014adf !important;
+    font-weight: bold !important;
+}
+.clabel5 {
+    background-color: #ff8200 !important;
+    color: black !important;
+    font-weight: bold !important;
+}
