@@ -1,0 +1,31 @@
+{
+    "licensee": {
+        "websiteName": "MyOnlineCash.Com",
+        "licenseeName": "Salim Popatiya"
+    },
+    "availableBalance": {
+        "available": 57273.43,
+        "paymentInProgress": 18574,
+        "accountBalance": 75847.43,
+        "transfersBalance": 50750.61,
+        "cumulativeBalance": 108024.04
+    },
+    "capitalAccount": {
+        "capitalDisbursed": 230000,
+        "totalCapital": 230000,
+        "capitalBalance": 0,
+        "transfers": 50750.61
+    },
+    "roi": {
+        "percentage": 42.56,
+        "interestEarned": 206358.82,
+        "lateInterestFeesEarned": 4284.54
+    },
+    "projectedRoi": {
+        "projected": 34.14,
+        "annualized": 33.12
+    },
+    "meta": {
+        "updatedAt": "2025-11-21T03:34:41+01:00"
+    }
+}

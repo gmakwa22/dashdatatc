@@ -1,0 +1,15 @@
+{
+    "projections": {
+        "investment": 230000.00,
+        "turnoverOfMoney": 5.00,
+        "moneyAvailableForLoanDisbursement": 1150000.00,
+        "estimatedEarningOfInterest": 172500.00,
+        "estimatedBadDebts": 26181.53,
+        "estimatedInterest": 0.00,
+        "projectedRoi": 34.14
+    },
+    "meta": {
+        "updatedAt": "2025-01-27T00:00:00+00:00"
+    }
+}
+

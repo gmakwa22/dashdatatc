@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Check</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .ok { color: green; }
+        .error { color: red; }
+        .check { margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>File Availability Check</h1>
+    <div id="results"></div>
+    
+    <script>
+        var files = [
+            'data/loan-graph.json',
+            'data/aging-data.json',
+            'data/dashboard-metrics.json',
+            'data/licensee-income.json',
+            'dist/vendors/bootstrap/css/bootstrap.min.css',
+            'dist/css/main.css',
+            'dist/css/tc-custom.css',
+            'Scripts/AdminImg/fav2.jpg',
+            'Scripts/AdminImg/taxcash-liclogo2.jpg',
+            'dist/images/lion-logo2.png',
+            'dist/vendors/jquery/jquery-3.3.1.min.js',
+            'dist/js/app.js'
+        ];
+        
+        var results = document.getElementById('results');
+        
+        function checkFile(file) {
+            return fetch(file, { method: 'HEAD' })
+                .then(function(response) {
+                    return { file: file, status: response.ok ? 'ok' : 'error', statusCode: response.status };
+                })
+                .catch(function(error) {
+                    return { file: file, status: 'error', error: error.message };
+                });
+        }
+        
+        Promise.all(files.map(checkFile)).then(function(results_array) {
+            results_array.forEach(function(result) {
+                var div = document.createElement('div');
+                div.className = 'check';
+                if (result.status === 'ok') {
+                    div.innerHTML = '<span class="ok">✓</span> ' + result.file + ' - OK';
+                } else {
+                    div.innerHTML = '<span class="error">✗</span> ' + result.file + ' - ERROR (Status: ' + (result.statusCode || result.error) + ')';
+                }
+                results.appendChild(div);
+            });
+        });
+    </script>
+</body>
+</html>
+

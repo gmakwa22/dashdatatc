@@ -1,0 +1,63 @@
+{
+    "loans": [
+        {
+            "id": 0,
+            "particularTitle": "Total Loans",
+            "itemCount": 1493,
+            "disbursedAmount": 1368620.95,
+            "interestAmount": 270037.62,
+            "totalAmount": 1638658.57,
+            "collectAmount": 1339035.71,
+            "varietyPercent": 100.00,
+            "activeCollection": 129095.60
+        },
+        {
+            "id": 0,
+            "particularTitle": "Pending Paid",
+            "itemCount": 104,
+            "disbursedAmount": 108794.00,
+            "interestAmount": 21758.80,
+            "totalAmount": 130552.80,
+            "collectAmount": 0.00,
+            "varietyPercent": 7.97,
+            "activeCollection": 0.00
+        },
+        {
+            "id": 0,
+            "particularTitle": "Pad Failed",
+            "itemCount": 85,
+            "disbursedAmount": 82567.00,
+            "interestAmount": 16513.40,
+            "totalAmount": 99080.40,
+            "collectAmount": 0.00,
+            "varietyPercent": 6.05,
+            "activeCollection": 56802.06
+        },
+        {
+            "id": 0,
+            "particularTitle": "Paid",
+            "itemCount": 1174,
+            "disbursedAmount": 1050226.95,
+            "interestAmount": 206358.82,
+            "totalAmount": 1256585.77,
+            "collectAmount": 1260870.31,
+            "varietyPercent": 76.68,
+            "activeCollection": 0.00
+        },
+        {
+            "id": 0,
+            "particularTitle": "Partial",
+            "itemCount": 130,
+            "disbursedAmount": 127033.00,
+            "interestAmount": 25406.60,
+            "totalAmount": 152439.60,
+            "collectAmount": 78165.40,
+            "varietyPercent": 9.30,
+            "activeCollection": 72293.54
+        }
+    ],
+    "meta": {
+        "updatedAt": "2025-01-27T00:00:00+00:00"
+    }
+}
+

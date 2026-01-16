@@ -1,0 +1,96 @@
+{
+  "cards": {
+    "balances": {
+      "available": 17067288.08,
+      "pending": 420000,
+      "account": 600000,
+      "cumulative": 9000000
+    },
+    "funding": {
+      "total": 6000000,
+      "etransfer": 2760000,
+      "received": 6900000,
+      "balance": 900000
+    },
+    "roi": {
+      "percentage": 29.57,
+      "investment": 6000000,
+      "income": 1800000,
+      "income2": 7337006.66,
+      "salesPercentage": 29.57
+    },
+    "territories": {
+      "totalAmount": 10000000,
+      "totalCount": 50,
+      "soldAmount": 5000000,
+      "soldCount": 25,
+      "inProgressAmount": 1400000,
+      "inProgressCount": 7,
+      "onHoldAmount": 2000000,
+      "onHoldCount": 10
+    },
+    "totalLoans": {
+      "count": 186000,
+      "today": 0,
+      "month": 120,
+      "value": 110500000
+    },
+    "approvedLoans": {
+      "value": 29300000,
+      "totalAmount": 110500000,
+      "pending": 0
+    },
+    "averageLoan": {
+      "average": 680,
+      "min": 0,
+      "max": 0
+    },
+    "registeredUsers": {
+      "count": 102874,
+      "today": 36,
+      "month": 903
+    },
+    "licenseeGrid": {
+      "daily": 7,
+      "mtd": 127,
+      "ytd": 127,
+      "all": 43022,
+      "alv": 680,
+      "alvm": 635,
+      "selectedDateRange": "7",
+      "selectedCountry": "ALL",
+      "licensees": [
+        {"name": "PrairieSkyLoans", "ratio": "0/1", "color": "blue"},
+        {"name": "RapidCashToday", "ratio": "1/2", "color": "blue"},
+        {"name": "Sundog", "ratio": "1/1", "color": "blue"},
+        {"name": "GetCashFast", "ratio": "1/3", "color": "blue"},
+        {"name": "DeltaCash", "ratio": "3/1", "color": "blue"},
+        {"name": "CloudNineLoans", "ratio": "1/1", "color": "blue"},
+        {"name": "EasyBuckOnline", "ratio": "0/0", "color": "green"},
+        {"name": "NorthRidgePaydayCash", "ratio": "0/0", "color": "green"},
+        {"name": "GreenTreeCash", "ratio": "0/0", "color": "green"},
+        {"name": "MaxCapSolutions", "ratio": "0/0", "color": "yellow"},
+        {"name": "TideWaterFinancial", "ratio": "0/0", "color": "yellow"},
+        {"name": "CashCartLoans", "ratio": "0/0", "color": "pink"},
+        {"name": "QualityCashLoans", "ratio": "0/0", "color": "pink"},
+        {"name": "SwiftOnlineCash", "ratio": "0/0", "color": "pink"},
+        {"name": "SpeedyPay", "ratio": "0/0", "color": "pink"},
+        {"name": "BrexPrime", "ratio": "0/0", "color": "red"},
+        {"name": "TitanEdgeUSA", "ratio": "0/0", "color": "red"},
+        {"name": "BrattsLakeSolutions", "ratio": "0/0", "color": "red"},
+        {"name": "PrestoVenturesGroup", "ratio": "0/0", "color": "red"},
+        {"name": "SageEndeavours", "ratio": "0/0", "color": "red"},
+        {"name": "SwiftCashToday", "ratio": "0/0", "color": "red"},
+        {"name": "TompkinsFinance", "ratio": "0/0", "color": "red"},
+        {"name": "MyOnlineCash", "ratio": "0/0", "color": "red"},
+        {"name": "PaydayCashLoans", "ratio": "0/0", "color": "red"},
+        {"name": "MadDashLoans", "ratio": "0/0", "color": "red"},
+        {"name": "BlackSilverCapital", "ratio": "0/0", "color": "lightblue"},
+        {"name": "BlackIrishCapital", "ratio": "0/0", "color": "lightblue"}
+      ]
+    }
+  },
+  "meta": {
+    "updatedAt": "2026-01-15T12:51:25.303653Z"
+  }
+}

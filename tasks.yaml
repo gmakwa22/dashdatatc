@@ -1,0 +1,36 @@
+# CrewAI Tasks Configuration
+# Define tasks and workflows for your agents
+
+analyze_dashboard:
+  description: |
+    Analyze the dashboard financial data including:
+    - Dashboard metrics (balances, funding, ROI, territories)
+    - Loan graph data (disbursements, collections, categories)
+    - Aging analysis data
+    
+    Calculate key metrics, identify trends, and highlight anomalies.
+  agent: financial_analyst
+  expected_output: |
+    A comprehensive financial analysis report including:
+    - Key performance indicators
+    - Trend analysis
+    - Anomaly detection
+    - Data quality assessment
+
+provide_recommendations:
+  description: |
+    Based on the financial analysis, provide actionable recommendations:
+    1. Strategies to improve collection rates
+    2. ROI optimization opportunities
+    3. Risk mitigation suggestions
+    4. Growth opportunities
+    
+    Prioritize recommendations by expected impact.
+  agent: strategic_advisor
+  expected_output: |
+    A prioritized list of actionable recommendations with:
+    - Specific actions to take
+    - Expected impact/benefit
+    - Implementation difficulty
+    - Priority ranking
+

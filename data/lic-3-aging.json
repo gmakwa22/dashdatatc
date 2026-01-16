@@ -1,0 +1,48 @@
+{
+    "aging": [
+        {
+            "label": "0 - 30 Days",
+            "loanDisbursement": 99147.00,
+            "interest": 19829.40,
+            "partialPayment": 24251.40,
+            "totalDebt": 97943.04,
+            "percent": 76.00
+        },
+        {
+            "label": "31-60 Days",
+            "loanDisbursement": 10148.00,
+            "interest": 2029.60,
+            "partialPayment": 0.00,
+            "totalDebt": 12681.56,
+            "percent": 10.00
+        },
+        {
+            "label": "61-90 Days",
+            "loanDisbursement": 3568.00,
+            "interest": 713.60,
+            "partialPayment": 670.00,
+            "totalDebt": 3885.91,
+            "percent": 3.00
+        },
+        {
+            "label": "91 - 120 Days",
+            "loanDisbursement": 2746.00,
+            "interest": 549.20,
+            "partialPayment": 560.00,
+            "totalDebt": 3007.97,
+            "percent": 2.00
+        },
+        {
+            "label": "121 - 200 Days",
+            "loanDisbursement": 10167.00,
+            "interest": 2033.40,
+            "partialPayment": 2024.93,
+            "totalDebt": 11577.12,
+            "percent": 9.00
+        }
+    ],
+    "meta": {
+        "updatedAt": "2025-01-27T00:00:00+00:00"
+    }
+}
+
