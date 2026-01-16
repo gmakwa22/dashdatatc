@@ -2578,6 +2578,16 @@ cfg: { // Application Insights Configuration
                             var newFirstNum = firstNum + randomIncrement;
                             var newSecondNum = secondNum + randomIncrement;
                             
+                            // If first number reaches 120 or above, reset to around 22-25
+                            if (newFirstNum >= 120) {
+                                newFirstNum = Math.floor(Math.random() * 4) + 22; // 22, 23, 24, or 25
+                            }
+                            
+                            // Ensure first number is at least 22
+                            if (newFirstNum < 22) {
+                                newFirstNum = Math.floor(Math.random() * 4) + 22; // 22, 23, 24, or 25
+                            }
+                            
                             // Update the ratio box text
                             ratioBox.textContent = newFirstNum + "/" + newSecondNum;
                             

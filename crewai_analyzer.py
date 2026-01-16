@@ -160,6 +160,18 @@ def calculate_metrics(data: dict) -> dict:
     
     return metrics
 
+@tool
+def read_licensee_fee_manual() -> str:
+    """Read the Licensee Fee Calculation Manual to understand how Transactional Fee and Monthly Amount are calculated."""
+    manual_path = PROJECT_ROOT / "LICENSEE_FEE_CALCULATION_MANUAL.md"
+    if not manual_path.exists():
+        return "Error: LICENSEE_FEE_CALCULATION_MANUAL.md not found"
+    try:
+        with open(manual_path, 'r', encoding='utf-8') as f:
+            return f.read()
+    except Exception as e:
+        return f"Error reading manual: {str(e)}"
+
 def create_analyst_agent():
     """Create a financial data analyst agent."""
     agent_kwargs = {
@@ -168,7 +180,7 @@ def create_analyst_agent():
         'backstory': """You are an experienced financial analyst specializing in loan portfolios, 
         ROI analysis, and financial dashboard metrics. You excel at identifying patterns, 
         calculating key performance indicators, and providing actionable insights.""",
-        'tools': [read_json_file, calculate_metrics],
+        'tools': [read_json_file, calculate_metrics, read_licensee_fee_manual],
         'verbose': True,
         'allow_delegation': False
     }
@@ -187,7 +199,7 @@ def create_recommendation_agent():
         'backstory': """You are a strategic financial advisor with expertise in optimizing 
         loan portfolios, improving collection rates, and maximizing ROI. You provide 
         clear, actionable recommendations based on data analysis.""",
-        'tools': [write_json_file],
+        'tools': [write_json_file, read_licensee_fee_manual],
         'verbose': True,
         'allow_delegation': False
     }

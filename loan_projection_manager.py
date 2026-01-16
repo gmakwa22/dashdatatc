@@ -424,6 +424,18 @@ def list_data_files() -> dict:
         return {"error": f"Failed to list files: {str(e)}"}
 
 @tool
+def read_licensee_fee_manual() -> str:
+    """Read the Licensee Fee Calculation Manual to understand how Transactional Fee and Monthly Amount are calculated based on licensee age, lending funds, and loan portfolio data."""
+    manual_path = PROJECT_ROOT / "LICENSEE_FEE_CALCULATION_MANUAL.md"
+    if not manual_path.exists():
+        return "Error: LICENSEE_FEE_CALCULATION_MANUAL.md not found"
+    try:
+        with open(manual_path, 'r', encoding='utf-8') as f:
+            return f.read()
+    except Exception as e:
+        return f"Error reading manual: {str(e)}"
+
+@tool
 def distribute_funds_to_licensees(total_amount: float, licensee_ids: list = None, distribution_method: str = "equal") -> dict:
     """
     Distribute funds across licensees for projection dashboard creation.
@@ -851,6 +863,7 @@ def create_loan_projection_manager():
         - Calculating realistic income projections based on fund distribution
         - Updating dashboard metrics, loan graphs, and aging data to match projections
         - Creating "what-if" scenarios for potential buyers
+        - Understanding licensee fee calculations (use read_licensee_fee_manual tool for detailed formulas)
         
         When users ask to "create new licensees", "add licensees", or "make X new licensees":
         IMMEDIATELY use the create_new_licensees tool. It will automatically:
@@ -874,7 +887,7 @@ def create_loan_projection_manager():
         - Update dashboard-metrics.json to reflect total investment and ROI
         - Update loan-graph.json based on projected loan activity
         - Always maintain proper JSON structure and include meta.updatedAt timestamp""",
-        'tools': [read_loan_data, read_aging_data, read_metrics, calculate_projection, write_json_file, read_json_file, list_data_files, distribute_funds_to_licensees, create_new_licensees, update_licensee_data, apply_fund_distribution],
+        'tools': [read_loan_data, read_aging_data, read_metrics, calculate_projection, write_json_file, read_json_file, list_data_files, distribute_funds_to_licensees, create_new_licensees, update_licensee_data, apply_fund_distribution, read_licensee_fee_manual],
         'verbose': True,
         'allow_delegation': False
     }
@@ -933,6 +946,7 @@ Available Tools:
 - distribute_funds_to_licensees: Distribute funds across licensees (for projection dashboards)
 - create_new_licensees: Create new licensee entries
 - apply_fund_distribution: Apply fund distribution plan to update licensee-income.json
+- read_licensee_fee_manual: Read the Licensee Fee Calculation Manual (explains Transactional Fee and Monthly Amount calculations)
 
 PRIMARY USE CASE - Projection Dashboard Creation:
 When the user wants to create a projection dashboard (e.g., "distribute $12 million over 14 licensees"):
