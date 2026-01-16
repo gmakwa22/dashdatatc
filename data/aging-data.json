@@ -2,50 +2,50 @@
     "aging": [
         {
             "label": "0 - 30 Days",
-            "loanDisbursement": 1725000,
-            "interest": 431250,
-            "partialPayment": 733125,
-            "totalDebt": 2156250,
-            "totalCollected": 2565937.5,
-            "tfpPayment": 86250,
-            "tfpCollected": 51318.75,
-            "tfpNet": -34931.25
+            "loanDisbursement": 558900000,
+            "interest": 139725000,
+            "partialPayment": 237533250,
+            "totalDebt": 698625000,
+            "totalCollected": 831365250,
+            "tfpPayment": 27945000,
+            "tfpCollected": 16627305,
+            "tfpNet": -11317695
         },
         {
             "label": "31 - 60 Days",
-            "loanDisbursement": 2070000,
-            "interest": 517500,
-            "partialPayment": 1466250,
-            "totalDebt": 2587500,
-            "totalCollected": 2199375,
-            "tfpPayment": 103500,
-            "tfpCollected": 43987.5,
-            "tfpNet": -59512.5
+            "loanDisbursement": 670680000,
+            "interest": 167670000,
+            "partialPayment": 475066500,
+            "totalDebt": 838350000,
+            "totalCollected": 712618500,
+            "tfpPayment": 33534000,
+            "tfpCollected": 14252370,
+            "tfpNet": -19281630
         },
         {
             "label": "61 - 90 Days",
-            "loanDisbursement": 1725000,
-            "interest": 431250,
-            "partialPayment": 1832812.5,
-            "totalDebt": 2156250,
-            "totalCollected": 1466250,
-            "tfpPayment": 86250,
-            "tfpCollected": 29325,
-            "tfpNet": -56925
+            "loanDisbursement": 558900000,
+            "interest": 139725000,
+            "partialPayment": 593833125,
+            "totalDebt": 698625000,
+            "totalCollected": 475066500,
+            "tfpPayment": 27945000,
+            "tfpCollected": 9501330,
+            "tfpNet": -18443670
         },
         {
             "label": "91+ Days",
-            "loanDisbursement": 1380000,
-            "interest": 345000,
-            "partialPayment": 1099687.5,
-            "totalDebt": 1725000,
-            "totalCollected": 1099687.5,
-            "tfpPayment": 69000,
-            "tfpCollected": 21993.75,
-            "tfpNet": -47006.25
+            "loanDisbursement": 447120000,
+            "interest": 111780000,
+            "partialPayment": 356299875,
+            "totalDebt": 558900000,
+            "totalCollected": 356299875,
+            "tfpPayment": 22356000,
+            "tfpCollected": 7125997.5,
+            "tfpNet": -15230002.5
         }
     ],
     "meta": {
-        "updatedAt": "2025-12-08T21:13:00+01:00"
+        "updatedAt": "2026-01-15T12:53:38.000094Z"
     }
 }

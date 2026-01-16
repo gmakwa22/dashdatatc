@@ -2,53 +2,53 @@
   "cards": {
     "balances": {
       "available": 17067288.08,
-      "pending": 420000,
-      "account": 600000,
-      "cumulative": 9000000
+      "pending": 136080000,
+      "account": 194400000,
+      "cumulative": 2916000000
     },
     "funding": {
-      "total": 6000000,
-      "etransfer": 2760000,
-      "received": 6900000,
-      "balance": 900000
+      "total": 1944000000,
+      "etransfer": 894240000,
+      "received": 2235600000,
+      "balance": 291600000
     },
     "roi": {
       "percentage": 29.57,
-      "investment": 6000000,
-      "income": 1800000,
-      "income2": 7337006.66,
+      "investment": 1944000000,
+      "income": 583200000,
+      "income2": 2377182158.64,
       "salesPercentage": 748.67
     },
     "territories": {
-      "totalAmount": 10000000,
-      "totalCount": 50,
-      "soldAmount": 5000000,
-      "soldCount": 25,
-      "inProgressAmount": 1400000,
-      "inProgressCount": 7,
-      "onHoldAmount": 2000000,
-      "onHoldCount": 10
+      "totalAmount": 3240000000,
+      "totalCount": 16200,
+      "soldAmount": 1620000000,
+      "soldCount": 8100,
+      "inProgressAmount": 453600000,
+      "inProgressCount": 2268,
+      "onHoldAmount": 648000000,
+      "onHoldCount": 3240
     },
     "totalLoans": {
-      "count": 186000,
+      "count": 60264000,
       "today": 0,
-      "month": 120,
-      "value": 110500000
+      "month": 38880,
+      "value": 35802000000
     },
     "approvedLoans": {
-      "value": 29300000,
-      "totalAmount": 110500000,
+      "value": 9493200000,
+      "totalAmount": 35802000000,
       "pending": 0
     },
     "averageLoan": {
-      "average": 680,
-      "min": 0,
-      "max": 0
+      "average": 220320,
+      "min": 50,
+      "max": 5000
     },
     "registeredUsers": {
-      "count": 102874,
-      "today": 36,
-      "month": 903
+      "count": 257400,
+      "today": 108,
+      "month": 2700
     },
     "licenseeGrid": {
       "daily": 2268,
@@ -91,6 +91,6 @@
     }
   },
   "meta": {
-    "updatedAt": "2026-01-15T12:51:25.303653Z"
+    "updatedAt": "2026-01-15T14:00:00.000000Z"
   }
 }

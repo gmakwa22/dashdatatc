@@ -1680,21 +1680,23 @@ cfg: { // Application Insights Configuration
             if (value === null || value === undefined || value === "") {
                 return formatCurrencyValue(0);
             }
+            // Always normalize to a number first for consistent formatting
+            var numeric;
             if (typeof value === "number") {
-                return formatCurrencyValue(value);
+                numeric = value;
+            } else {
+                var text = value.toString().trim();
+                if (!text) {
+                    return formatCurrencyValue(0);
+                }
+                // Extract numeric value from string (removes $, commas, etc.)
+                numeric = Number(text.replace(/[^0-9.\-]/g, ""));
+                if (isNaN(numeric)) {
+                    return text; // Return original if not a valid number
+                }
             }
-            var text = value.toString().trim();
-            if (!text) {
-                return formatCurrencyValue(0);
-            }
-            if (text[0] === "$") {
-                return text;
-            }
-            var numeric = Number(text.replace(/[^0-9.\-]/g, ""));
-            if (!isNaN(numeric)) {
-                return formatCurrencyValue(numeric);
-            }
-            return text;
+            // Always format consistently using formatCurrencyValue
+            return formatCurrencyValue(numeric);
         }
 
         function findLicenseeOption(entry) {
